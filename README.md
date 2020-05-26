@@ -1,11 +1,6 @@
 # Ovoid Markup Language - Version 1.0.0
 
-<div align="center">
-    ```
-    ![Benjamin Bannekat](https://downtowninteractive.com/wp-content/uploads/2018/06/O-Logo.png)
-    ```
-</div>
-
+![Benjamin Bannekat](https://downtowninteractive.com/wp-content/uploads/2018/06/O-Logo.png)
 
 I am an amateur coder, specialising in HTML, CSS and Bootstrap. I'm also learning Swift, Xcode, JavaScript and SQL.
 
