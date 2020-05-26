@@ -1,4 +1,12 @@
 # Ovoid Markup Language - Version 1.0.0
+
+<div align="center">
+    ```
+    ![Benjamin Bannekat](https://downtowninteractive.com/wp-content/uploads/2018/06/O-Logo.png)
+    ```
+</div>
+
+
 I am an amateur coder, specialising in HTML, CSS and Bootstrap. I'm also learning Swift, Xcode, JavaScript and SQL.
 
 **However, I want to branch out, and am working in a markup language designed to help with developing websites and web apps.**
