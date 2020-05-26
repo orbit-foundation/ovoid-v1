@@ -1,0 +1,135 @@
+[open.ovo:
+
+---INVIS---
+
+[page-info:
+    title: OvoidDraft;
+    displaytitle: Ovoid;
+    favicon: fav.jpg;
+.]
+
+[style:
+    [fetchfile location:external destinationurl:"https://fonts.google.com/download?family=Hind%20Vadodara" setas=defaultfont .]
+    [createnew(text.style):
+        style.name: head1;
+        font-colour: #ffffff;
+        font-size: 30;
+        font-family: "Hind Vadodara";
+    .]
+    [createnew(text.style):
+        style.name: head1black;
+        font-colour: #000000;
+        font-size: 30;
+        font-family: "Hind Vadodara";
+    .]
+
+    [createnew(text.style):
+        style.name: para1;
+        font-colour: #000000;
+        font-size: 12;
+        font-family: "Hind Vadodara";
+    ]
+
+    [createnew(text.style):
+        style.name: para1white;
+        font-colour: #ffffff;
+        font-size: 12;
+        font-family: "Hind Vadodara";
+    ]
+
+    [createnew(nav.style);
+        style.name: navmain
+        [entrybox:
+            fill: #000000
+            text-fill: #ffffff
+            font-family: default;
+
+        .]
+    .]
+    [customise(page):
+        fill: #ffffff
+    .]
+.]
+
+---\\\----
+
+[open.header:
+
+[header.style:
+    fill=#ff914d;
+.]
+
+[insert ref=LogoHeader type=image loc="logo.jpg" width=90px height=90px align=left .]
+
+[insert ref=NameHeader type=string value="Ovoid" text.style=head1 align=left respectivealign=nas .]
+
+[insert type=nav ref=nav nav.style=navmain width=auto entrycol="#ff914d" align=right entries:
+    [insert type=naventry location=internal destinationurl=index.ovo displayvalue="Home" .]
+    [insert type=naventry location=internal destinationurl=about.ovo displayvalue="About" .]
+    [insert type=naventry location=external destinationurl=https://helpcentre.mywebsite.com displayvalue="Help Centre" .]
+.]
+
+.]
+
+[open.page:
+[insert ref=banner type=strip width=max height=70% filltype=image imageloc=bannerbackdrop.jpg align=auto:
+    [insert parent=banner type=string width=auto height=auto text.style=head1 value="Ovoid." arrange=front .]
+    [insert parent=banner type=string width=auto height=auto text.style=subhead1 value="The simplest way to code websites and web apps." arrange.front .}
+.]
+[insert type=linebreak .]
+
+[insert ref=strip1 type=strip width=max height=60% filltype=transparent align=auto:
+    [insert parent=strip1 type=string width=auto height=auto text.style=head1black value="Thanks for coming!" align=left margin=5% .]
+    [insert parent=strip1 type=string width=auto height=auto text.style=para1 value="We've spent a long time coding and preparing this website. This is the very first web-page to be coded with Ovoid, the radical new programming language of our invention." allow-multiline=true .]
+    [insert parent=strip1 type=image width=40% height=max location=internal destinationurl=illustration1.jpg .]
+.]
+
+[insert ref=strip2 type=strip column-count=3 col-content:
+    [column1.style:
+        fill=#ffddc2;
+    .]
+    [open.column1 ref=strip2col1:
+    [insert parent=strip2col1 type=image width=90px height=90px location:internal destinationurl=person.jpg .]
+    [insert parent=strip2col1 type=string width=auto height=auto text.style=head1black value="Personal" .]
+    [insert parent=strip2col1 type=string width=max height=auto text.style=para1 value="Ovoid's guarantee is that your web apps and websites can be more personal than ever. Thanks to integration with many popular providers, our programs can be more varying than ever." allow-multiline=true]
+    .]
+
+    [column2.style:
+        fill=#ffae6b;
+    .]
+    [open.column2 ref=strip2col2:
+    [insert parent=strip2col2 type=image width=90px height=90px location=internal destinationurl=brain.jpg .]
+    [insert parent=strip2col2 type=string width=auto height=auto text.style=head1black value="Intuitive" .]
+    [insert parent=strip2col2 type=string width=auto height=auto text.style=para1 value="We're working with leading technology businesses to incorporate ML (Machine Learning) into our code, so that your UIs and UXs can be more intelligent than ever before." allow-multiline=true]
+    .]
+
+    [column3.style
+        fill=#db6300;
+    .]
+    [open.column3 ref=strip2col3:
+    [insert parent=strip2col3 type=image width=90px heighht=90px location=internal destinationurl=puzzle.jpg .]
+    [insert parent=strip2col3 type=string width=auto height=auto text.style=head1 value="Simple" .]
+    [insert parent=strip2col3 type=string width=auto height=auto text.style=para1white value="Our code is accredited as one of the simplest codes to learn, and we're working to make it even more simple so that anyone, from 8 to 80, can understand it." allow-multline=true .]
+    .]
+.]
+
+[insert ref=strip3 type=strip width=max height=40% filltype=color color=#ff914d content:
+     [insert parent=banner type=string width=auto height=auto align=center text.style=head1 value="Ready to get started?" arrange=front .]
+     [insert parent=banner type=string width=auto height=auto align=center text.style=subhead1 value="Click the button now to enroll at our Ovoid Academy." arrange=front .]
+     [insert parent=banner type=button width=120px height=20px align=center value="Enroll" arrange=front .]
+.]
+
+[insert ref=strip4cuboid type=strip width=max height=40% filltype=image imageloc="cuboid.jpg" content:
+     [insert parent=banner type=string width=auto height=auto align=center text.style=head1 value="Cuboid" arrange=front .]
+     [insert parent=banner type=string width=auto height=auto align=center text.style=subhead1 value="Coming soon! Our new language for coding desktop applications for Windows, Linux and MacOS." arrange=front .]
+     [insert parent=banner type=button width=120px height=20px align=center value="Learn more" arrange=front .]
+.]
+
+.]
+
+[open.footer:
+    [insert ref=LogoFooter type=image location=internal destinationurl="ovoid.jpg" width=90px height=90px align=left margin=5% .]
+    [insert ref=NameFooter type=string width=auto height=auto align=right margin=5% value="Ovoid"]
+.]
+
+.]
